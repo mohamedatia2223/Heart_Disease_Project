@@ -35,7 +35,6 @@ The primary goal is to **analyze, predict, and visualize heart disease risks** w
 * **ML & Feature Engineering:** Scikit-learn
 * **Dimensionality Reduction:** PCA
 * **Deployment:** Streamlit, Pyngrok
-* *(Optional)*: TensorFlow/Keras for deep learning extensions
 
 ---
 
