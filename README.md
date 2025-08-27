@@ -90,7 +90,7 @@ pip install -r requirements.txt
 For step-by-step analysis:
 
 ```bash
-jupyter notebook notebooks/
+pipeline/pipe.py
 ```
 
 ### 3️⃣ Run Streamlit App
