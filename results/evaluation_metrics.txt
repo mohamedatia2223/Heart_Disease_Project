@@ -1,0 +1,72 @@
+Without hyperparameter tuning
+Logistic Regression
+              precision    recall  f1-score   support
+
+           0       0.71      0.83      0.77        75
+           1       0.87      0.77      0.82       109
+
+    accuracy                           0.79       184
+   macro avg       0.79      0.80      0.79       184
+weighted avg       0.80      0.79      0.80       184
+**********************************************************************
+
+Decision Tree Classifier
+              precision    recall  f1-score   support
+
+           0       0.64      0.75      0.69        75
+           1       0.80      0.71      0.75       109
+
+    accuracy                           0.72       184
+   macro avg       0.72      0.73      0.72       184
+weighted avg       0.73      0.72      0.73       184
+**********************************************************************
+
+SVC
+ precision    recall  f1-score   support
+
+           0       0.75      0.84      0.79        75
+           1       0.88      0.81      0.84       109
+
+    accuracy                           0.82       184
+   macro avg       0.81      0.82      0.82       184
+weighted avg       0.83      0.82      0.82       184
+**********************************************************************
+
+Random Forest Classifier
+   precision    recall  f1-score   support
+
+           0       0.76      0.81      0.79        75
+           1       0.87      0.83      0.85       109
+
+    accuracy                           0.82       184
+   macro avg       0.81      0.82      0.82       184
+weighted avg       0.82      0.82      0.82       184
+**********************************************************************
+
+With hyperparameter tuning
+
+Logistic Regression
+Best parameters found: {'solver': 'saga', 'penalty': 'l2', 'max_iter': 100, 'C': 10}
+Best cross-validation score: 0.7962217319360178
+
+**********************************************************************
+Decision Tree Classifier
+Best parameters found: {'splitter': 'best', 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_features': 'log2', 'max_depth': 5, 'criterion': 'log_loss'}
+Best cross-validation score: 0.7487129987129988
+
+**********************************************************************
+SVC
+Best parameters found: {'C': 0.1, 'kernel': 'linear', 'max_iter': 1000}
+Best cross-validation score: 0.8043758043758042
+
+**********************************************************************
+Random Forest Classifier
+Best parameters found: {'n_estimators': 100, 'min_samples_split': 5, 'min_samples_leaf': 4, 'max_features': 'sqrt', 'max_depth': 30, 'criterion': 'gini', 'bootstrap': True}
+Best cross-validation score: 0.7948519948519948
+
+**********************************************************************
+**********************************************************************
+
+Best model: SVM
+Best CV score: 0.8043758043758042
+Best parameters: {'C': 0.1, 'kernel': 'linear', 'max_iter': 1000}
